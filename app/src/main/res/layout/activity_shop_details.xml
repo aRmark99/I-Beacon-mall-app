@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RedeemDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imshop"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:src="@drawable/black_background" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvshopno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/ic_store_black_24dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvtel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/ic_phone_black_24dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvophour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/ic_access_time_black_24dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvlocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/ic_locationon"
+            />
+
+        <TextView
+            android:id="@+id/tvhowtogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/ic_howtogo"
+            android:text="How to Go?"/>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

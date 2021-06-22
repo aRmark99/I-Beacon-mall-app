@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fyp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name="BeaconReferenceApplication"
+        >
+        <activity android:name=".TimedBeaconSimulator"></activity>
+        <activity android:name=".RangingActivity" />
+        <activity android:name=".MonitoringActivity" />
+        <activity android:name=".NavigationActivity" />
+        <activity android:name=".activity_shop_details" />
+        <activity android:name=".UploadActivity" />
+        <activity android:name=".RedeemDetailActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EventDetailActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".BirthdayActivity" />
+        <activity android:name=".GiftActivity" />
+        <activity android:name=".MyGiftActivity" />
+        <activity android:name=".ShopActivity" />
+        <activity android:name=".ShopInfoAdapter" />
+
+
+
+    </application>
+
+</manifest>
